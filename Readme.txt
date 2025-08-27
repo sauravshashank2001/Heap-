@@ -33,3 +33,40 @@ Implementing Priority Queue (most common).
 Heap Sort algorithm (O(n log n)).
 Kth largest/smallest element in an array.
 Efficient scheduling problems (e.g., CPU scheduling).
+
+_____________________________________________**********__________________________________________________
+
+Priority Queue
+
+A Priority Queue is an abstract data type (ADT) that works like a queue, but each element has a priority.
+Instead of strictly FIFO, the element with highest priority is dequeued first.
+
+Key Points:
+Normal Queue → follows FIFO (First In First Out).
+Priority Queue → order is based on priority, not just insertion order.
+Higher priority → served earlier.
+If priorities are same → then follow insertion order (depends on implementation).
+
+_______________________________________________________________________________
+
+Implementations:
+
+Using Heap (most efficient) →
+    Max Priority Queue → Max Heap.
+    Min Priority Queue → Min Heap.
+
+Using Sorted Array/Linked List
+    Insertion or deletion becomes costly (O(n)).
+
+Using Unsorted Array/Linked List
+    Insert is O(1), delete min/max is O(n).
+
+
+______________________________________________________________________________________________________________
+
+Real-world Applications:
+    CPU scheduling (process with highest priority gets CPU).
+    Dijkstra’s shortest path algorithm (choose min distance node first).
+    A search* in AI/pathfinding.
+    Event-driven simulation (next event chosen by priority).
+    Huffman coding (build optimal prefix code tree).
